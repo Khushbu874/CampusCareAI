@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fitsSystemWindows="true">
+
+    <!-- Profile Button at Top Right -->
+    <ImageButton
+        android:id="@+id/btn_profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/person"
+        android:background="@drawable/circle_bg"
+        android:contentDescription="Profile"
+        android:padding="4dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless"/>
+
+    <!-- Scrollable Content (placed BELOW profile button) -->
+    <ScrollView
+        android:id="@+id/home_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btn_profile"
+        android:padding="16dp"
+        android:fillViewport="true">
+
+        <!-- Center container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <!-- AI Chatbot Button -->
+            <Button
+                android:id="@+id/btn_ai_chatbot"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="AI Complaint Box"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:background="@drawable/box_bg"
+                android:drawableLeft="@drawable/ai_chat"
+                android:layout_marginBottom="20dp"
+                android:padding="12dp"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center" />
+
+            <!-- Emergency Situation Button -->
+            <Button
+                android:id="@+id/btn_emergency"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Emergency Situation"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:background="@drawable/box_bg"
+                android:drawableLeft="@drawable/emergency"
+                android:layout_marginBottom="20dp"
+                android:padding="12dp"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center" />
+
+            <!-- Track Complaint Status Button -->
+            <Button
+                android:id="@+id/btn_track_status"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Track Complaint Status"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:background="@drawable/box_bg"
+                android:drawableLeft="@drawable/track_status"
+                android:padding="12dp"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginBottom="20dp"
+                android:gravity="center" />
+
+            <!-- Administrator Check Complaint Button -->
+            <Button
+                android:id="@+id/admin_btn"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Admin"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:background="@drawable/box_bg"
+                android:drawableLeft="@drawable/person"
+                android:padding="12dp"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

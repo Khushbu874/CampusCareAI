@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Home -->
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ai_chat"
+        android:title="Home" />
+
+    <!-- AI chatbot -->
+    <item
+        android:id="@+id/nav_chat"
+        android:icon="@drawable/ai_chat"
+        android:title="AI chat" />
+
+    <!-- Emergency Situation -->
+    <item
+        android:id="@+id/nav_emergency"
+        android:icon="@drawable/emergency"
+        android:title="Emergency Situation" />
+
+    <!-- Track Complaint Status -->
+    <item
+        android:id="@+id/nav_status"
+        android:icon="@drawable/track_status"
+        android:title="Track Complaint Status" />
+
+    <!-- Administrator -->
+    <item
+        android:id="@+id/nav_admin"
+        android:icon="@drawable/person"
+        android:title="Administrator" />
+
+</menu>
