@@ -8,6 +8,10 @@
 
 ---
 
+## Presentation Link - https://docs.google.com/presentation/d/1m0m1_oNwGv7-SfaoJErrEL8H8ye-v6wB/edit?usp=drivesdk&ouid=102749358480471690658&rtpof=true&sd=true
+
+---
+
 ## Problem Statement 
 -Build a secure and anonymous platform for students to raise issues, complaints, or suggestions to college authorities without fear of exposure.
 
